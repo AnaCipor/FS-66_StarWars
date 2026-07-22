@@ -6,21 +6,19 @@
 }
 
 body {
-    font-family: 'Poller One', cursive, sans-serif;
-    background-image: url("../img/sky.jpg");
+    font-family: 'Poller One', cursive;
+    background-image: url(../img/sky.jpg);
     color: #eedb00;
     background-attachment: fixed;
 }
 
 header, footer {
-    background-color: rgba(60, 69, 67, 0.6);
+    background-color: rgba(60,69,67,0.6);
 }
 
 header {
     border-radius: 16px 16px 0 0;
 }
-
-
 
 h1 {
     text-align: center;
@@ -35,16 +33,14 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
-
-.left {
+.left{
     float: left;
     width: 25%;
     margin-right: 1%;
-
 }
 
 .left img {
@@ -52,43 +48,42 @@ nav ul {
     width: 100%;
     height: auto;
     border: 1px solid black;
-    box-shadow: 6px 6px 12px rgba(255, 255, 255, 0.5);
+    box-shadow: 6px 6px 12px rgba(255,255,255,0.5);
 }
 
 .right {
     float: right;
     width: 50%;
+    margin-left: 1%;
     border: 1px solid #eedb00;
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 16px 16px;
+    background-color: rgba(0,0,0, 0.4);
     overflow: hidden;
-    margin-left: 5px;
 }
 
-.right td {
-    width: 33.333%;
-    padding: 0;
-    border: 1px solid black;
-    border-collapse: collapse;
+.right table{
+    width: 100%;
     table-layout: fixed;
+    border-collapse: collapse;
 }
 
-img[alt="Friends"] {
-    width: 33.333%;
-    box-sizing: border-box;
+.right td{
+    padding: 0;
+}
+
+.right img {
+    display: block;
+    width: 100%;
     border: 2px solid black;
 }
 
-/*.right img {*/
-/*    width: 100%;*/
-/*    display: block;*/
-/*    box-sizing: border-box;*/
-/*    border: 2px solid black;*/
-/*    !*height: 230px;*!*/
-/*    !*object-fit: cover;*!*/
-/*}*/
+.right h2 {
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0.2em;
+}
 
-.far-galaxy {
-    padding: 15px;
+.far-galaxy{
     font-size: 1.5em;
     line-height: 1.4;
     text-align: justify;
@@ -101,72 +96,19 @@ footer {
     border-radius: 0 0 16px 16px;
 }
 
-.button {
+.button{
     display: inline-block;
     border: 2px solid black;
-    background-color: rgba(203, 3, 35, 0.5);
+    background-color: rgba(204,3,35,0.5);
     cursor: pointer;
     font-size: 1em;
     padding: 0.3em 0.5em;
     border-radius: 5px;
-    /*margin-right: 20px;*/
 }
 
+/*
+Доделайте оформление css так, что бы максимально подходило под
+дизайн картинки с использованием технологии флоат
 
-
-
-
-/*header,*/
-/*main,*/
-/*footer {*/
-/*    max-width: 1200px;*/
-/*    margin-left: auto;*/
-/*    margin-right: auto;*/
-/*}*/
-
-
-
-/*nav ul li {*/
-/*    display: inline-block;*/
-/*    border: 2px solid black;*/
-/*    background-color: rgba(203, 3, 35, 0.5);*/
-/*    cursor: pointer;*/
-/*    font-size: 1em;*/
-/*    padding: 0.3em 0.5em;*/
-/*    border-radius: 5px;*/
-/*    !*margin-right: 20px;*!*/
-/*}*/
-
-
-/*.right {*/
-/*    !*float: right;*!*/
-/*    width: 50%;*/
-/*    margin-left: 1%;*/
-/*    border: 1px solid #eedb00;*/
-/*    border-radius: 0 0 16px 16px;*/
-/*    background-color: rgba(0, 0, 0, 0.4);*/
-/*    overflow: hidden;*/
-/*}*/
-
-/*.right h2 {*/
-/*    text-align: center;*/
-/*    font-size: 1.2em;*/
-/*    padding: 0.3em;*/
-/*    margin-bottom: 10px;*/
-/*}*/
-
-/*.right img {*/
-/*    display: flex;*/
-/*    width: 33.333%;*/
-/*    justify-content: space-between;*/
-/*    */
-/*    !*float: left;*!*/
-/*    !*height: 240px;*!*/
-/*    !*height: auto;*!*/
-/*    !*border: 2px solid black;*!*/
-/*    !*box-sizing: border-box;*!*/
-/*    !*display: block;*!*/
-/*    !*object-fit: cover;*!*/
-/*    !*margin: calc(1% / 6);*!*/
-/*}*/
-
+Пока таблицы не используем и index не меняем
+ */
